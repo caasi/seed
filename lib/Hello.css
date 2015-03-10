@@ -19,13 +19,14 @@
 .hello.sm,
 .hello.xs {
   display: inline-block;
+  vertical-align: top;
   width: 320px;
   height: auto;
   margin-right: 10px;
 }
 .hello.sm:last-child,
 .hello.xs:last-child {
-  margin-right: 10px;
+  margin-right: 0;
 }
 .hello.sm .image,
 .hello.xs .image {
@@ -37,8 +38,11 @@
 .hello.xs .title {
   border-bottom: 0;
 }
+.hello.sm {
+  height: 470px;
+}
 .hello.xs {
-  width: 120px;
+  width: 125px;
 }
 .hello.xs .image {
   display: none;

@@ -5,11 +5,9 @@ class Hello extends Component
   @propTypes =
     image: PropTypes.string
     title: PropTypes.string
-    cotent: PropTypes.string
   @defaultProps =
     image: 'http://placekitten.com/g/300/300'
     title: 'Hello, World'
-    content: 'This is a React component.'
   (@props) ->
   render: ~>
     { className = '', children, image, title, content } = @props
@@ -23,7 +21,7 @@ class Hello extends Component
         title
       div do
         className: 'content'
-        content
+        children
 
 module.exports = Hello
 
