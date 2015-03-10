@@ -1,0 +1,171 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/**
+ * Inheriting box-sizing Probably Slightly Better Best-Practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ **/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #16161d;
+}
+.hello {
+  background: #fff;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  height: 320px;
+}
+.hello .image {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+}
+.hello .title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.hello.sm,
+.hello.xs {
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+}
+.hello.sm:last-child,
+.hello.xs:last-child {
+  margin-right: 10px;
+}
+.hello.sm .image,
+.hello.xs .image {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.hello.sm .title,
+.hello.xs .title {
+  border-bottom: 0;
+}
+.hello.xs {
+  width: 120px;
+}
+.hello.xs .image {
+  display: none;
+}
+.hello.xs .title {
+  border-bottom: 1px solid #999;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.app {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}

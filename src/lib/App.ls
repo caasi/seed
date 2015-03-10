@@ -1,23 +1,20 @@
 React = require 'react'
 { Component, PropTypes, { div }:DOM } = React
 
+Hello = React.createFactory require './Hello'
+
 class App extends Component
-  @propTypes =
-    color: PropTypes.string
-  @defaultProps =
-    color: \red
-  (@props) ->
-    @state = color: @props.color
   render: ~>
+    { className = '', children } = @props
     div do
-      className: \app
-      style:
-        background: @state.color
-      onClick: ~>
-        @setState color:
-          if @state.color is \red
-            then \green
-            else \red
-      'click me'
+      className: 'app ' + className
+      Hello!
+      Hello className: \sm
+      Hello className: \sm
+      Hello className: \xs
+      Hello className: \xs
+      Hello className: \xs
+      children
 
 module.exports = App
+

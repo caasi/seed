@@ -1,0 +1,23 @@
+@import 'nib'
+
+global-reset()
+
+/**
+ * Inheriting box-sizing Probably Slightly Better Best-Practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ **/
+html
+  box-sizing border-box
+
+*
+*:before
+*:after
+  box-sizing inherit
+
+html, body
+  height 100%
+
+body
+  background #16161d
+
+@import './lib/App'
